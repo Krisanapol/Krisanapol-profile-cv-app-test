@@ -37,7 +37,7 @@ function App() {
           </div>
         </div>
         <div className='pic'>
-          <img src="src\assets\images\cat.jpg" alt="" />
+          <img src="https://media.discordapp.net/attachments/1082990763866079303/1357650671645626408/486722779_1165642098685869_5751289822397168868_n.jpg?ex=67f0fa38&is=67efa8b8&hm=441a9833d834d1b6410a7278e4f78216918366bf244e43311fd32424d96b74b8&=&format=webp&width=960&height=960" alt="" />
         </div>
       </div>
       <hr />

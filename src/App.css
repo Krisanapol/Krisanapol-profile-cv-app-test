@@ -1,0 +1,338 @@
+:root {
+    background-color: #000000;
+    /* ตั้งค่าพื้นหลังสีดำสำหรับ root */
+}
+
+body {
+    display: contents;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    height: 100vh;
+    /* ให้ body ครอบคลุมความสูงของหน้าจอ */
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* ให้ .app ครอบคลุมความสูงของ body */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #000000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.header nav a:hover {
+    color: #00ff7f;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    flex: 1;
+    /* ให้ .profile ขยายเต็มพื้นที่ที่เหลือ */
+    background-color: #000000;
+}
+
+.intro {
+    max-width: 50%;
+    text-align: left;
+}
+
+.intro h2 {
+    font-size: 3rem;
+    /* ขยายขนาดข้อความ */
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.actions button {
+    background-color: #00ff7f;
+    color: #000000;
+    border: none;
+    padding: 15px 30px;
+    /* เพิ่มขนาดปุ่ม */
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.actions button:hover {
+    background-color: #00cc66;
+}
+
+.actions a {
+    display: inline-block;
+    width: 50px;
+    /* เพิ่มขนาดไอคอน */
+    height: 50px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.actions a:hover {
+    background-color: #00ff7f;
+    color: #000000;
+}
+
+.photo img {
+    max-width: 400px;
+    /* เพิ่มขนาดรูปภาพ */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    columns: 2;
+    /* ใช้ columns เพื่อแบ่งเนื้อหาเป็น 2 คอลัมน์ */
+    padding: 50px 100px;
+    /* เพิ่ม padding รอบๆ เนื้อหา */
+    content: space-between;
+}
+
+.content div {
+    text-align: center;
+    padding-top: 80px;
+    border: #000000 1px solid;
+}
+
+
+.about h1 {
+    text-align: left;
+}
+
+.about img {
+    background-color: #00cc66;
+    border-radius: 155px;
+    padding: 10px;
+    width: 26px;
+    margin-top: 10px;
+
+}
+
+.about p {
+    text-align: left;
+}
+
+.about button {
+    background-color: #00cc66;
+    border-radius: 100px;
+    color: #000000;
+}
+
+.pic img {
+    max-width: 100%;
+    height: 500px;
+    /* เพิ่มขนาดรูปภาพ */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    display: block;
+    margin: 0 auto;
+    /* จัดกลางรูปภาพ */
+}
+
+.social {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}
+
+.Aboutme {
+    columns: 2;
+    /* ใช้ columns เพื่อแบ่งเนื้อหาเป็น 2 คอลัมน์ */
+    padding: 50px 100px;
+    /* เพิ่ม padding รอบๆ เนื้อหา */
+    /* border: #00cc66 1px solid; */
+}
+
+.aboutme-content button {
+    background-color: #00cc66;
+    border-radius: 100px;
+    color: #000000;
+}
+
+.aboutme-title {
+    /* border: #00cc66; */
+    text-align: left;
+    padding-top: 100px;
+
+}
+
+.aboutme-content {
+    /* border: #00ff7f; */
+    text-align: left;
+    padding-top: 80px;
+}
+
+.aboutme-content img {
+    background-color: #00cc66;
+    border-radius: 155px;
+    padding: 10px;
+    width: 26px;
+    margin-top: 0px;
+}
+
+.aboutme-content a {
+    display: initial-block;
+    margin-bottom: 0px;
+}
+
+.social-about {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}
+
+.aboutme-pic img {
+    max-width: 100%;
+    width: 1000px;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+hr {
+    border: none;
+    height: 2px; /* ความหนาของเส้น */
+    background-color: #00ff7f; /* สีของเส้น */
+    margin: 40px 0; /* ระยะห่างด้านบนและล่าง */
+    width: 95%; /* ความยาวของเส้น */
+    margin-left: auto;
+    margin-right: auto; /* จัดให้อยู่ตรงกลาง */
+  }
+
+  .Experience {
+    display: flex; /* ใช้ Flexbox เพื่อจัดวาง */
+    justify-content: space-between; /* แบ่งพื้นที่ซ้าย-ขวา */
+    align-items: flex-start; /* จัดให้อยู่ด้านบน */
+    padding: 50px 100px; /* เพิ่ม padding รอบๆ เนื้อหา */
+    gap: 20px; /* ระยะห่างระหว่างซ้ายและขวา */
+  }
+  
+  .Experience-title {
+    flex: 1; /* ให้พื้นที่ด้านซ้าย */
+    text-align: left; /* จัดข้อความให้อยู่ด้านซ้าย */
+    color: #ffffff; /* สีข้อความ */
+  }
+  
+  .Experience-content {
+    flex: 2; /* ให้พื้นที่ด้านขวามากกว่า */
+    line-height: 1.8; /* เพิ่มระยะห่างระหว่างบรรทัด */
+    font-size: 1.1rem; /* ขยายขนาดข้อความ */
+    color: #ffffff; /* สีข้อความ */
+  }
+  
+  .Experience-content h2 {
+    margin-top: 20px; /* เพิ่มระยะห่างด้านบน */
+    color: #00ff7f; /* เปลี่ยนสีหัวข้อ */
+  }
+  
+  .Experience-content p {
+    margin-bottom: 20px; /* เพิ่มระยะห่างด้านล่าง */
+  }
+
+  .licenes{
+    padding-top: 100px;
+  }
+
+  .inputtitle {
+    display: flex; /* ใช้ Flexbox เพื่อจัดวาง */
+    justify-content: space-between; /* แบ่งพื้นที่ซ้าย-ขวา */
+    align-items: flex-start; /* จัดให้อยู่ด้านบน */
+    gap: 20px; /* ระยะห่างระหว่างซ้ายและขวา */
+    padding: 50px; /* เพิ่ม padding รอบๆ เนื้อหา */
+  }
+  
+  .input-title {
+    flex: 1; /* ให้พื้นที่ด้านซ้าย */
+    text-align: left; /* จัดข้อความให้อยู่ด้านซ้าย */
+    color: #ffffff; /* สีข้อความ */
+  }
+  
+  .input-content {
+    flex: 1; /* ให้พื้นที่ด้านขวา */
+    display: flex;
+    flex-direction: column; /* จัดเรียงในแนวตั้ง */
+    gap: 15px; /* เพิ่มระยะห่างระหว่างแต่ละบรรทัด */
+    max-width: 100%; /* ให้ฟอร์มกว้างเต็มพื้นที่ */
+  }
+  
+  .input-content p {
+    margin: 0; /* ลบ margin ด้านบนและล่าง */
+    font-size: 1rem; /* ขนาดข้อความ */
+    color: #ffffff; /* สีข้อความ */
+  }
+  
+  .input-content input,
+  .input-content textarea {
+    width: 100%; /* ให้ input และ textarea กว้างเต็มพื้นที่ */
+    padding: 10px; /* เพิ่ม padding ภายใน */
+    border: 1px solid #ccc; /* เส้นขอบ */
+    border-radius: 5px; /* มุมโค้งมน */
+    font-size: 1rem; /* ขนาดข้อความ */
+  }
+  
+  .input-content textarea {
+    resize: none; /* ปิดการปรับขนาดของ textarea */
+  }
+  
+  .input-content button {
+    margin-top: 20px; /* เพิ่มระยะห่างด้านบน */
+    padding: 10px 15px; /* ลด padding เพื่อให้ปุ่มเล็กลง */
+    background-color: #00ff7f; /* สีพื้นหลัง */
+    color: #000000; /* สีข้อความ */
+    border: none; /* ลบเส้นขอบ */
+    border-radius: 50px; /* มุมโค้งมน */
+    font-size: 1rem; /* ขนาดข้อความ */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เมื่อ hover */
+    width: auto; /* ให้ปุ่มปรับขนาดตามข้อความ */
+    max-width: 200px; /* จำกัดความกว้างสูงสุด */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+}
+
+.input-content button:hover {
+    background-color: #00cc66; /* สีเมื่อ hover */
+}
